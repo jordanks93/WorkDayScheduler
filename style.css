@@ -40,6 +40,7 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  /*centers element*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,12 +67,15 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  /*centers element*/
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.saveBtn i:hover {
+/*when a button is hovered it will change color*/
+button:hover {
   font-size: 20px;
+  background-color: #000000;
   transition: all .3s ease-in-out;
 }
