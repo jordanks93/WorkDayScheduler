@@ -5,13 +5,14 @@ var workHours = $("textarea").get();
 
 // updates the color of the textarea element depending on the time
 function colorUpdate() {
-    var currentHour = t.hours();
+    // store current work hour(1-9 = 9am-5pm) to compare with textarea id
+    var currentWorkHour = t.hours()-8;
     for (i = 0; i < workHours.length; i++) {
         var hour = $("textarea").get(i).id;
-        if (currentHour > hour) {
+        if (currentWorkHour > hour) {
             $("#" + hour).addClass("past");
         }
-        else if (currentHour == hour) {
+        else if (currentWorkHour == hour) {
             $("#" + hour).addClass("present");
         }
         else {
@@ -22,7 +23,7 @@ function colorUpdate() {
 
 // gets text saved in textareas if available in local storage
 function pullActivities() {
-    for (i = 9; i < workHours.length + 9; i++) {
+    for (i = 0; i < workHours.length; i++) {
         var text = localStorage.getItem(i);
         $("#" + i).val("");
         $("#" + i).val(text);
