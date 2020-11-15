@@ -13,7 +13,7 @@
   *  save button listener, will save text in textarea if button clicked
 
 ## Visual:
-[Demo](./gif/Demo.gif)
+![Demo](./gif/Demo.gif)
 
 [Gitpages Link](https://jordanks93.github.io/WorkDayScheduler/)
 
