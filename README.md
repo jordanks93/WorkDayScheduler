@@ -1,6 +1,10 @@
 # WorkDayScheduler
 ## A simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
+# Technologies Used:
+ * HTML
+ * CSS
+
 #List of JS methods and listeners
 
 * colorUpdate()
@@ -18,4 +22,8 @@
 [Gitpages Link](https://jordanks93.github.io/WorkDayScheduler/)
 
 ## Author: 
-Jordan Stuckman
+Jordan Stuckman - jordanks93@gmail.com
+
+## License:
+[MIT](./license/license.txt)
+
